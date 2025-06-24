@@ -1,7 +1,9 @@
 {
   
   inputs = {
+    /*
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/3";
+    */
     nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
     /*
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
