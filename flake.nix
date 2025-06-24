@@ -3,8 +3,10 @@
   inputs = {
     determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1";
+    /*
     nixpkgs.follows = "nixos-cosmic/nixpkgs";
     nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+    */
   };
   
   outputs = inputs@{ self, nixpkgs, determinate, nixos-cosmic, ... }: {
@@ -16,13 +18,13 @@
      /* ./configuration.nix */
       ];
     };
-    
+    /*
     nixosConfigurations.NOTEBOOK-ACER = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         determinate.nixosModules.default
         nixos-cosmic.nixosModules.default
-        /*
+        
         ./configuration.nix
 
         ./hosts/NOTEBOOK-ACER/hardware-configuration.nix
@@ -47,7 +49,7 @@
         ./modules/cosmic/environment.nix
         ./modules/cosmic/services.nix
         ./modules/cosmic/systemd.nix
-        */
+        
       ];
     };
 
@@ -56,7 +58,7 @@
       modules = [
         
         determinate.nixosModules.default
-        /*
+        
         ./configuration.nix
         
         ./hosts/DESKTOP-JOSHUA/networking.nix
@@ -75,9 +77,10 @@
         ./modules/users.nix
         ./modules/xdg.nix
         ./modules/zram.nix
-        */
+        
       ];
     };
+    */
   };
 
 }
