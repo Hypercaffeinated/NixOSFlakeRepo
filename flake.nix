@@ -20,16 +20,15 @@
     nixosConfigurations.NOTEBOOK-ACER = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        #--------------------------------------------------------
         determinate.nixosModules.default
         nixos-cosmic.nixosModules.default
-        #--------------------------------------------------------
+       
         ./configuration.nix
-        #--------------------------------------------------------
+
         ./hosts/NOTEBOOK-ACER/hardware-configuration.nix
         ./hosts/NOTEBOOK-ACER/networking.nix
         ./hosts/NOTEBOOK-ACER/services.nix
-        #--------------------------------------------------------
+
         ./modules/boot.nix
         ./modules/console.nix
         ./modules/environment.nix
@@ -42,8 +41,9 @@
         ./modules/systemd.nix
         ./modules/time.nix
         ./modules/users.nix
+        ./modules/xdg.nix
         ./modules/zram.nix
-        #--------------------------------------------------------
+
         ./modules/cosmic/environment.nix
         ./modules/cosmic/services.nix
         ./modules/cosmic/systemd.nix
@@ -53,13 +53,13 @@
     nixosConfigurations.DESKTOP-JOSHUA = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        #--------------------------------------------------------
+        
         determinate.nixosModules.default
-        #--------------------------------------------------------
+        
         ./configuration.nix
-        #--------------------------------------------------------
+        
         ./hosts/DESKTOP-JOSHUA/networking.nix
-        #--------------------------------------------------------
+        
         ./modules/boot.nix
         ./modules/console.nix
         ./modules/environment.nix
@@ -72,8 +72,8 @@
         ./modules/systemd.nix
         ./modules/time.nix
         ./modules/users.nix
+        ./xdg.nix
         ./modules/zram.nix
-        #--------------------------------------------------------
       ];
     };
   };
