@@ -12,7 +12,7 @@
     */
   };
   
-  outputs = inputs@{ self, nixpkgs, determinate, nixos-cosmic, ... }: {
+  outputs = inputs@{ self, nixpkgs,/* determinate, nixos-cosmic, */ ... }: {
     
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
