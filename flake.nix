@@ -4,12 +4,14 @@
   # Flake inputs
   inputs = {
     flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";
-
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
+    nixpkgs.follows = "nixos-cosmic/nixpkgs";
+    nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
   };
 
   # Flake outputs that other flakes can use
-  outputs = { self, flake-schemas, nixpkgs }:
+  outputs = inputs@{ self, flake-schemas, nixpkgs, determinate, nixos-cosmic, ... }:
     let
       # Helpers for producing system-specific outputs
       supportedSystems = [ "x86_64-linux" ];
