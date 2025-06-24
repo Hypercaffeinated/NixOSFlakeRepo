@@ -72,7 +72,7 @@
         ./modules/systemd.nix
         ./modules/time.nix
         ./modules/users.nix
-        ./xdg.nix
+        ./modules/xdg.nix
         ./modules/zram.nix
       ];
     };
