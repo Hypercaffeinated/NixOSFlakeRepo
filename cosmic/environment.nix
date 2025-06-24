@@ -1,0 +1,11 @@
+{ config, lib, pkgs, ... }:
+
+{
+
+  environment = {
+    sessionVariables = {
+      COSMIC_DATA_CONTROL_ENABLED = 1;
+    };
+  };
+  
+}
