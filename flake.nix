@@ -34,7 +34,7 @@
       # NixOS system configurations
       nixosConfigurations = {
 
-        nixos = nixpkgs.lib.nixosSystem {
+        NOTEBOOK-ACER = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
             determinate.nixosModules.default
