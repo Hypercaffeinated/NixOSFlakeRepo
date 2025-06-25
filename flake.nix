@@ -38,6 +38,9 @@
           system = "x86_64-linux";
           modules = [
             determinate.nixosModules.default
+            { 
+              environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
+            }
             nixos-cosmic.nixosModules.default
 
             ./configuration.nix
