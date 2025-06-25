@@ -14,7 +14,7 @@
     };
     pipewire = {
       enable = true;
-      media-session = {
+      wireplumber = {
         enable = true;
       };
       alsa = {
