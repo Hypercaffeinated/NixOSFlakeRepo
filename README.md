@@ -9,7 +9,7 @@ Add `NixOSFlakeRepo` to your `flake.nix`:
   inputs.NixOSFlakeRepo.url = "https://flakehub.com/f/Hypercaffeinated/NixOSFlakeRepo/*";
 
   outputs = { self, nixpkgs, NixOSFlakeRepo, ... }: {
-    nixosConfigurations.$(hostname) = NixOSFlakeRepo.nixosConfigurations.$(hostname);
+    nixosConfigurations.nixos = NixOSFlakeRepo.nixosConfigurations.nixos;
   };
 }
 ```
