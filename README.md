@@ -10,6 +10,7 @@ Add `NixOSFlakeRepo` to your `flake.nix`:
 
   outputs = { self, nixpkgs, NixOSFlakeRepo, ... }: {
     nixosConfigurations.NOTEBOOK-ACER = NixOSFlakeRepo.nixosConfigurations.NOTEBOOK-ACER;
+    nixosConfigurations.DESKTOP-HP = NixOSFlakeRepo.nixosConfigurations.DESKTOP-HP;
   };
 }
 ```
