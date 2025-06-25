@@ -33,7 +33,7 @@
       # NixOS system configurations
       nixosConfigurations = {
 
-        NOTEBOOK-ACER = nixpkgs.lib.nixosSystem {
+        $(hostname) = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
             determinate.nixosModules.default
