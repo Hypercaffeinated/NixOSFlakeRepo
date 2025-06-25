@@ -72,6 +72,45 @@
             ./modules/cosmic/xdg.nix
           ];
         };
+
+        DESKTOP-HP = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            determinate.nixosModules.default
+            { 
+              environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
+            }
+            nixos-cosmic.nixosModules.default
+
+            ./configuration.nix
+
+            ./hosts/DESKTOP-HP/hardware-configuration.nix
+            ./hosts/DESKTOP-HP/networking.nix
+
+            ./modules/boot.nix
+            ./modules/console.nix
+            ./modules/environment.nix
+            ./modules/i18n.nix
+            ./modules/networking.nix
+            ./modules/nix.nix
+            ./modules/nixpkgs.nix
+            ./modules/programs.nix
+            ./modules/services.nix
+            ./modules/system.nix
+            ./modules/systemd.nix
+            ./modules/time.nix
+            ./modules/users.nix
+            ./modules/xdg.nix
+            ./modules/zram.nix
+
+            ./modules/cosmic/environment.nix
+            ./modules/cosmic/nix.nix
+            ./modules/cosmic/services.nix
+            ./modules/cosmic/systemd.nix
+            ./modules/cosmic/xdg.nix
+          ];
+        };
+      
       };
     };
 }
