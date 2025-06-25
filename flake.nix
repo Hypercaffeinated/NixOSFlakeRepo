@@ -51,6 +51,7 @@
             ./modules/i18n.nix
             ./modules/networking.nix
             ./modules/nix.nix
+            ./modules/nixpkgs.nix
             ./modules/programs.nix
             ./modules/services.nix
             ./modules/system.nix
