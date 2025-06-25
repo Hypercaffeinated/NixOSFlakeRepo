@@ -7,9 +7,9 @@ Add `NixOSFlakeRepo` to your `flake.nix`:
 ```nix
 {
   inputs.NixOSFlakeRepo.url = "https://flakehub.com/f/Hypercaffeinated/NixOSFlakeRepo/*";
- 
-  outputs = { self, NixOSFlakeRepo }: {
-    NixOSFlakeRepo.nixosModules.default
+
+  outputs = { self, nixpkgs, NixOSFlakeRepo, ... }: {
+    nixosConfigurations."NOTEBOOK-ACER" = NixOSFlakeRepo.nixosConfigurations."NOTEBOOK-ACER";
   };
 }
 ```
