@@ -32,13 +32,6 @@
 
       # NixOS system configurations
       nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          modules = [
-            determinate.nixosModules.default
-            ./configuration.nix
-          ];
-        };
 
         NOTEBOOK-ACER = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
@@ -70,32 +63,6 @@
             ./modules/cosmic/environment.nix
             ./modules/cosmic/services.nix
             ./modules/cosmic/systemd.nix
-          ];
-        };
-
-        DESKTOP-JOSHUA = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          modules = [
-            determinate.nixosModules.default
-
-            ./configuration.nix
-
-            ./hosts/DESKTOP-JOSHUA/networking.nix
-
-            ./modules/boot.nix
-            ./modules/console.nix
-            ./modules/environment.nix
-            ./modules/i18n.nix
-            ./modules/networking.nix
-            ./modules/nix.nix
-            ./modules/programs.nix
-            ./modules/services.nix
-            ./modules/system.nix
-            ./modules/systemd.nix
-            ./modules/time.nix
-            ./modules/users.nix
-            ./modules/xdg.nix
-            ./modules/zram.nix
           ];
         };
       };
