@@ -6,7 +6,7 @@
      users = {
        joshua = {
          isNormalUser = true;
-         extraGroups = [ "wheel" ];
+         extraGroups = [ "wheel" "networkmanager" ];
          packages = [];
        };
      };
