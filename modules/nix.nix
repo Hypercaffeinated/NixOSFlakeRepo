@@ -7,7 +7,7 @@
         trusted-substituters = [ 
           "https://install.determinate.systems"
         ];
-        extra-trusted-substituters
+        extra-trusted-substituters = [
           "https://chaotic-nyx.cachix.org/"
         ];
         trusted-public-keys = [ 
