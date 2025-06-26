@@ -25,10 +25,13 @@
     flake-utils = {
       url = "github:numtide/flake-utils";
     };
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    };
   };
 
   # Flake outputs that other flakes can use
-  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, ... }:
+  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, chaotic, ... }:
     let
       # Helpers for producing system-specific outputs
       supportedSystems = [ "x86_64-linux" ];
@@ -59,6 +62,7 @@
               environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
             }
             nixos-cosmic.nixosModules.default
+            chaotic.nixosModules.default
 
             ./configuration.nix
 
@@ -91,6 +95,7 @@
               environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
             }
             nixos-cosmic.nixosModules.default
+            chaotic.nixosModules.default
 
             ./configuration.nix
 
