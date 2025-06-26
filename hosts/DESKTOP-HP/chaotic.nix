@@ -60,7 +60,6 @@
     pkgs.firefox_nightly
     pkgs.bpftools_full
     pkgs.appmenu-gtk3-module
-    pkgs.linuxPackages_cachyos-lto
   ];
   
 }
