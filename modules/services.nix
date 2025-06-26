@@ -9,7 +9,7 @@
     kmscon = {
       enable = true;
       hwRender = true;
-      extraConfig = "font-size=16"
+      extraConfig = "font-size=16";
     };
   };
 
