@@ -103,10 +103,11 @@
             ./modules/systemd.nix
             ./modules/time.nix
             ./modules/users.nix
-            ./modules/zram.nix
+            ./modules/zramSwap.nix
 
             ./modules/cosmic/environment.nix
             ./modules/cosmic/nix.nix
+            ./modules/cosmic/programs.nix
             ./modules/cosmic/services.nix
             ./modules/cosmic/systemd.nix
             ./modules/cosmic/xdg.nix
