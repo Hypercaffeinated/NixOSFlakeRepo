@@ -64,12 +64,6 @@
             ./modules/users.nix
             ./modules/xdg.nix
             ./modules/zram.nix
-
-            ./modules/cosmic/environment.nix
-            ./modules/cosmic/nix.nix
-            ./modules/cosmic/services.nix
-            ./modules/cosmic/systemd.nix
-            ./modules/cosmic/xdg.nix
           ];
         };
 
