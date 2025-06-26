@@ -71,6 +71,7 @@
 
             ./configuration.nix
 
+            ./hosts/NOTEBOOK-ACER/boot.nix
             ./hosts/NOTEBOOK-ACER/hardware-configuration.nix
             ./hosts/NOTEBOOK-ACER/networking.nix
             ./hosts/NOTEBOOK-ACER/services.nix
@@ -106,6 +107,7 @@
 
             ./configuration.nix
 
+            ./hosts/DESKTOP-HP/boot.nix
             ./hosts/DESKTOP-HP/chaotic.nix
             ./hosts/DESKTOP-HP/hardware-configuration.nix
             ./hosts/DESKTOP-HP/networking.nix
