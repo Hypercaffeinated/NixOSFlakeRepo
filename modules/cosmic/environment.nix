@@ -12,7 +12,7 @@
     };
     systemPackages = [
         
-        pkgs.papirus-maia-icon-theme
+        #pkgs.papirus-maia-icon-theme
         pkgs.papirus-folders
 
         pkgs.cosmic-bg
