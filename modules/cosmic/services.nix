@@ -16,6 +16,9 @@
         };
       };
     };
+    flatpak = {
+      enable = true;
+    };
   };
 
 }
