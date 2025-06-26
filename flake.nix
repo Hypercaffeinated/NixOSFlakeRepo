@@ -22,10 +22,13 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flake-utils = {
+      url = "github:numtide/flake-utils";
+    };
   };
 
   # Flake outputs that other flakes can use
-  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, ... }:
+  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, ... }:
     let
       # Helpers for producing system-specific outputs
       supportedSystems = [ "x86_64-linux" ];
