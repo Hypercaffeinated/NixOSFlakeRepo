@@ -13,7 +13,7 @@
     };
     nixpkgs = {
       url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
-      follows = "nixos-cosmic/nixpkgs";
+      follows = "github:lilyinstarlight/nixos-cosmic/nixpkgs";
     };
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
