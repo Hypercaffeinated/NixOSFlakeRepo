@@ -28,10 +28,13 @@
     chaotic = {
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     };
+    jovian = {
+      follows = "chaotic/jovian";
+    };
   };
 
   # Flake outputs that other flakes can use
-  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, chaotic, ... }:
+  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, chaotic, jovian, ... }:
     let
       # Helpers for producing system-specific outputs
       supportedSystems = [ "x86_64-linux" ];
@@ -63,6 +66,7 @@
             }
             nixos-cosmic.nixosModules.default
             chaotic.nixosModules.default
+            jovian.nixosModules.default
 
             ./configuration.nix
 
@@ -97,6 +101,7 @@
             }
             nixos-cosmic.nixosModules.default
             chaotic.nixosModules.default
+            jovian.nixosModules.default
 
             ./configuration.nix
 
