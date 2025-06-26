@@ -106,6 +106,7 @@
 
             ./configuration.nix
 
+            ./hosts/DESKTOP-HP/chaotic.nix
             ./hosts/DESKTOP-HP/hardware-configuration.nix
             ./hosts/DESKTOP-HP/networking.nix
 
