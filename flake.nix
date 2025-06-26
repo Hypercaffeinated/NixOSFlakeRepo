@@ -62,7 +62,6 @@
             ./modules/systemd.nix
             ./modules/time.nix
             ./modules/users.nix
-            ./modules/xdg.nix
             ./modules/zram.nix
           ];
         };
@@ -94,7 +93,6 @@
             ./modules/systemd.nix
             ./modules/time.nix
             ./modules/users.nix
-            ./modules/xdg.nix
             ./modules/zram.nix
 
             ./modules/cosmic/environment.nix
