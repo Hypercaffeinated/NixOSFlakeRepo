@@ -1,4 +1,4 @@
-{ config, lib, pkgs, chaotic, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
 
