@@ -72,7 +72,7 @@
             ./modules/systemd.nix
             ./modules/time.nix
             ./modules/users.nix
-            ./modules/zram.nix
+            ./modules/zramSwap.nix
           ];
         };
 
