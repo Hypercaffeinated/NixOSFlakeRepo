@@ -71,6 +71,7 @@
             ./hosts/NOTEBOOK-ACER/services.nix
 
             ./modules/boot.nix
+            ./modules/chaotic.nix
             ./modules/console.nix
             ./modules/environment.nix
             ./modules/i18n.nix
@@ -103,6 +104,7 @@
             ./hosts/DESKTOP-HP/networking.nix
 
             ./modules/boot.nix
+            ./modules/chaotic.nix
             ./modules/console.nix
             ./modules/environment.nix
             ./modules/i18n.nix
