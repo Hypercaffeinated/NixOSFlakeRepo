@@ -31,12 +31,6 @@
     };
   };
 
-  swapDevices = [
-    {
-      
-    }
-  ];
-
   networking = {
     useDHCP = lib.mkDefault true;
   };  
