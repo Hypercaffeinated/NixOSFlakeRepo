@@ -1,11 +1,7 @@
 # Use as a flake
 
 [![FlakeHub](https://img.shields.io/endpoint?url=https://flakehub.com/f/Hypercaffeinated/NixOSFlakeRepo/badge)](https://flakehub.com/flake/Hypercaffeinated/NixOSFlakeRepo)
-![Version](https://img.shields.io/github/v/tag/Hypercaffeinated/NixOSFlakeRepo)
-![Build Status](https://img.shields.io/github/workflow/status/Hypercaffeinated/NixOSFlakeRepo/CI)
-![License](https://img.shields.io/github/license/Hypercaffeinated/NixOSFlakeRepo)
-![Open Issues](https://img.shields.io/github/issues/Hypercaffeinated/NixOSFlakeRepo)
-![Stars](https://img.shields.io/github/stars/Hypercaffeinated/NixOSFlakeRepo?style=social)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/Hypercaffeinated/NixOSFlakeRepo)
 
 Add `NixOSFlakeRepo` to your `flake.nix`:
 
