@@ -28,9 +28,6 @@
         enable = true;
       };
     };
-    flatpak = {
-      enable = true;
-    };
     swapspace = {
       enable = true;
     };
