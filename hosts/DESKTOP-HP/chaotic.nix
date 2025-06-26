@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
 
@@ -26,7 +26,7 @@
   };
   
   environment.systemPackages = [ 
-    pkgs.zed-editor_git
+    #pkgs.zed-editor_git
     pkgs.xdg-desktop-portal-wlr_git
     pkgs.wlroots_git
     pkgs.wayland_git
