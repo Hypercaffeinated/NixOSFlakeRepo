@@ -26,10 +26,9 @@
       url = "github:numtide/flake-utils";
     };
     chaotic = {
-      url = "https://flakehub.com/f/chaotic-cx/nyx/*.tar.gz";
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     };
     jovian = {
-      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
       follows = "chaotic/jovian";
     };
   };
@@ -60,6 +59,7 @@
 
         NOTEBOOK-ACER = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
           modules = [
             determinate.nixosModules.default
             { 
@@ -96,6 +96,7 @@
 
         DESKTOP-HP = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
           modules = [
             determinate.nixosModules.default
             { 
