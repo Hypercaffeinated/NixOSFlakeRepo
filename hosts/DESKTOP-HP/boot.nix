@@ -3,7 +3,7 @@
 {
 
   boot = {
-    kernelPackages = pkgs.linux_cachyos-lto;
+    kernelPackages = linuxPackages_cachyos-lto;
   };
   
 }
