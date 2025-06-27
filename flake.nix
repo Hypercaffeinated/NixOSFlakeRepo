@@ -6,7 +6,8 @@
 #                                                 FLAKE INPUTS
 # _______________________________________________________________________________________________________________
   
-  inputs = {
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs =
     flake-schemas = {
       url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";
     }; 
@@ -15,9 +16,6 @@
     };
     fh = {
       url = "https://flakehub.com/f/DeterminateSystems/fh/*";
-    };
-    nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
     };
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
