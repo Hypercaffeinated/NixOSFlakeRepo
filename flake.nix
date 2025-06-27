@@ -14,24 +14,24 @@
   
   inputs.fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*";
   
-  inputs.nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+  #inputs.nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
 
-  inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
+  #inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
   
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  #inputs.flake-utils.url = "github:numtide/flake-utils";
   
-  inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-  
+  #inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+  /*
   inputs.nur = {
     url = "github:nix-community/NUR";
     inputs.nixpkgs.follows = "nixpkgs";
   };
-
+  */
 # _______________________________________________________________________________________________________________
 #                                                  FLAKE OUTPUTS
 # _______________________________________________________________________________________________________________  
   
-  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, chaotic, ... }:
+  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, /*nixos-cosmic, nur, flake-utils, chaotic,*/ ... }:
     
     let
       
@@ -77,8 +77,8 @@
             }
           # -----------------------------------------------------------------------------------------------------
             determinate.nixosModules.default
-            nixos-cosmic.nixosModules.default
-            chaotic.nixosModules.default
+            #nixos-cosmic.nixosModules.default
+            #chaotic.nixosModules.default
           # -----------------------------------------------------------------------------------------------------
             ./configuration.nix
           # -----------------------------------------------------------------------------------------------------
@@ -121,8 +121,8 @@
             }
           # -----------------------------------------------------------------------------------------------------
             determinate.nixosModules.default
-            nixos-cosmic.nixosModules.default
-            chaotic.nixosModules.default
+            #nixos-cosmic.nixosModules.default
+            #chaotic.nixosModules.default
           # -----------------------------------------------------------------------------------------------------
             ./configuration.nix
           # -----------------------------------------------------------------------------------------------------
