@@ -58,10 +58,11 @@
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
-            determinate.nixosModules.default
             { 
               environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
             }
+            
+            determinate.nixosModules.default
             nixos-cosmic.nixosModules.default
             chaotic.nixosModules.default
 
@@ -94,10 +95,11 @@
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
-            determinate.nixosModules.default
             { 
               environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
             }
+
+            determinate.nixosModules.default
             nixos-cosmic.nixosModules.default
             chaotic.nixosModules.default
 
