@@ -9,7 +9,14 @@
     kmscon = {
       enable = true;
       hwRender = true;
-      extraConfig = "font-size=16";
+      useXkbConfig = true;
+      extraConfig = "font-size=18";
+      fonts = [ 
+        { 
+          name = "Source Code Pro"; 
+          package = pkgs.source-code-pro; 
+        } 
+      ];
     };
   };
 
