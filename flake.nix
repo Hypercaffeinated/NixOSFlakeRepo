@@ -88,7 +88,7 @@
             ./hosts/NOTEBOOK-ACER/services.nix
           # -----------------------------------------------------------------------------------------------------
             ./modules/boot.nix
-            ./modules/chaotic.nix
+            #./modules/chaotic.nix
             ./modules/console.nix
             ./modules/environment.nix
             ./modules/i18n.nix
@@ -127,14 +127,14 @@
             ./configuration.nix
           # -----------------------------------------------------------------------------------------------------
             ./hosts/DESKTOP-HP/boot.nix
-            ./hosts/DESKTOP-HP/chaotic.nix
+            #./hosts/DESKTOP-HP/chaotic.nix
             ./hosts/DESKTOP-HP/environment.nix
             ./hosts/DESKTOP-HP/hardware-configuration.nix
             ./hosts/DESKTOP-HP/networking.nix
             ./hosts/DESKTOP-HP/programs.nix
           # -----------------------------------------------------------------------------------------------------
             ./modules/boot.nix
-            ./modules/chaotic.nix
+            #./modules/chaotic.nix
             ./modules/console.nix
             ./modules/environment.nix
             ./modules/i18n.nix
