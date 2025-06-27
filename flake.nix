@@ -7,29 +7,15 @@
 # _______________________________________________________________________________________________________________
   
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-  inputs =
-    flake-schemas = {
-      url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";
-    }; 
-    determinate = {
-      url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
-    };
-    fh = {
-      url = "https://flakehub.com/f/DeterminateSystems/fh/*";
-    };
-    nixos-cosmic = {
-      url = "github:lilyinstarlight/nixos-cosmic";
-    };
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    flake-utils = {
-      url = "github:numtide/flake-utils";
-    };
-    chaotic = {
-      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    };
+  inputs.flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*"; 
+  inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
+  inputs.fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*";
+  inputs.nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+  inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+  inputs.nur = {
+    url = "github:nix-community/NUR";
+    inputs.nixpkgs.follows = "nixpkgs";
   };
 
 # _______________________________________________________________________________________________________________
