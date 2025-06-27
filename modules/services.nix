@@ -3,16 +3,21 @@
 {
 
   services = {
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "de";
+      };
+    };
     swapspace = {
       enable = true;
     };
     kmscon = {
       enable = true;
       hwRender = true;
-      #useXkbConfig = true;
+      useXkbConfig = true;
       extraConfig = ''
-        font-size=20
-        xkb-layout=de
+        font-size=24
       '';
       fonts = [ 
         { 
