@@ -10,7 +10,10 @@
       enable = true;
       hwRender = true;
       useXkbConfig = true;
-      extraConfig = "font-size=18";
+      extraConfig = ''
+        font-size=20
+        xkb-layout=de
+      '';
       fonts = [ 
         { 
           name = "Source Code Pro"; 
