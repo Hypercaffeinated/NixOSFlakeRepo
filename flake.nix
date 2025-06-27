@@ -21,7 +21,6 @@
     };
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
-      inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
     };
     nur = {
       url = "github:nix-community/NUR";
