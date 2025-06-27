@@ -126,7 +126,7 @@
           # -----------------------------------------------------------------------------------------------------
             ./configuration.nix
           # -----------------------------------------------------------------------------------------------------
-            ./hosts/DESKTOP-HP/boot.nix
+            #./hosts/DESKTOP-HP/boot.nix
             #./hosts/DESKTOP-HP/chaotic.nix
             ./hosts/DESKTOP-HP/environment.nix
             ./hosts/DESKTOP-HP/hardware-configuration.nix
