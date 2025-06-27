@@ -7,12 +7,21 @@
 # _______________________________________________________________________________________________________________
   
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  
   inputs.flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*"; 
+  
   inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
+  
   inputs.fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*";
+  
   inputs.nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+
+  inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
+  
   inputs.flake-utils.url = "github:numtide/flake-utils";
+  
   inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+  
   inputs.nur = {
     url = "github:nix-community/NUR";
     inputs.nixpkgs.follows = "nixpkgs";
