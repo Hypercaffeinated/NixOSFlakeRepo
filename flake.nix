@@ -107,6 +107,7 @@
             ./hosts/DESKTOP-HP/chaotic.nix
             ./hosts/DESKTOP-HP/hardware-configuration.nix
             ./hosts/DESKTOP-HP/networking.nix
+            ./hosts/DESKTOP-HP/programs.nix
 
             ./modules/boot.nix
             ./modules/chaotic.nix
