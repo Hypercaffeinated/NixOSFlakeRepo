@@ -28,12 +28,6 @@
     chaotic = {
       url = "https://flakehub.com/f/chaotic-cx/nyx/*.tar.gz";
     };
-    jovian = {
-      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-      follows = "chaotic/jovian";
-      #inputs.nixpkgs.follows = "nixpkgs";
-      #inputs.nixpkgs.follows = "chaotic/jovian";
-    };
   };
 
   # Flake outputs that other flakes can use
