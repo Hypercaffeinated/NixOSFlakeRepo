@@ -9,7 +9,7 @@
     kmscon = {
       enable = true;
       hwRender = true;
-      useXkbConfig = true;
+      #useXkbConfig = true;
       extraConfig = ''
         font-size=20
         xkb-layout=de
