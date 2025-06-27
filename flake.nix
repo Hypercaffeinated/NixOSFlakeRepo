@@ -130,6 +130,7 @@
             ./modules/zramSwap.nix
 
             ./modules/cosmic/environment.nix
+            ./modules/cosmic/hardware.nix
             ./modules/cosmic/nix.nix
             ./modules/cosmic/programs.nix
             ./modules/cosmic/services.nix
