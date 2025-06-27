@@ -12,7 +12,7 @@
       url = "https://flakehub.com/f/DeterminateSystems/fh/*";
     };
     nixpkgs = {
-      url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
+      url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
