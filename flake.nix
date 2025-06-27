@@ -26,7 +26,7 @@
       url = "github:numtide/flake-utils";
     };
     chaotic = {
-      url = "https://flakehub.com/f/chaotic-cx/nyx/*.tar.gz";
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     };
   };
 
