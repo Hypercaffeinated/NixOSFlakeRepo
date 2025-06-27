@@ -16,9 +16,6 @@
     fh = {
       url = "https://flakehub.com/f/DeterminateSystems/fh/*";
     };
-    flake-checker = {
-      url = "https://flakehub.com/f/DeterminateSystems/flake-checker/*"
-    };
     nixpkgs = {
       url = "nixos-cosmic/nixpkgs";
     };
@@ -41,7 +38,7 @@
 #                                                  FLAKE OUTPUTS
 # _______________________________________________________________________________________________________________  
   
-  outputs = inputs@{ self, flake-schemas, determinate, fh, flake-checker, nixpkgs, nixos-cosmic, nur, flake-utils, chaotic, ... }:
+  outputs = inputs@{ self, flake-schemas, determinate, fh, nixpkgs, nixos-cosmic, nur, flake-utils, chaotic, ... }:
     
     let
       
