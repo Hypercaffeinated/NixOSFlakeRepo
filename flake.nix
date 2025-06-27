@@ -17,10 +17,11 @@
       url = "https://flakehub.com/f/DeterminateSystems/fh/*";
     };
     nixpkgs = {
-      url = "nixos-cosmic/nixpkgs";
+      url = "github:nixos/nixpkgs/nixos-unstable";
     };
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
+      inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs"";
     };
     nur = {
       url = "github:nix-community/NUR";
