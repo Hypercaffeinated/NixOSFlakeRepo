@@ -8,12 +8,19 @@
     };
     variables = {
       XCURSOR_SIZE=24;
-      XCURSOR_THEME="Bibata-Modern-Classic";
+      XCURSOR_THEME="openzone-cursors";
     };
     systemPackages = [
         
         #pkgs.papirus-maia-icon-theme
         pkgs.papirus-folders
+        pkgs.openzone-cursors
+        pkgs.libdecor
+        pkgs.waycheck
+        pkgs.nwg-look
+        pkgs.libinput
+        pkgs.gtk4-layer-shell
+        pkgs.scenefx
 
         pkgs.cosmic-bg
         pkgs.cosmic-osd
@@ -50,6 +57,53 @@
         pkgs.tasks
         pkgs.oboete
         pkgs.libcosmicAppHook
+        pkgs.forecast
+
+        pkgs.just
+        pkgs.rustc
+        pkgs.waylandpp
+        pkgs.wlr-protocols
+        pkgs.frog-protocols
+        pkgs.libGL
+        pkgs.egl-wayland
+        pkgs.eglexternalplatform
+        pkgs.vtk_9_egl
+        pkgs.freeglut
+        pkgs.gegl
+        pkgs.mesa
+        pkgs.driversi686Linux.mesa
+        pkgs.mesa-demos
+        pkgs.driversi686Linux.mesa-demos
+        pkgs.mesa-gl-headers
+        pkgs.libgbm
+        pkgs.libdrm
+        pkgs.seatd
+        pkgs.libxkbcommon
+        pkgs.libinput
+        pkgs.eudev
+        pkgs.dbus
+        
+        pkgs.systemd
+        pkgs.systemdLibs
+        pkgs.systemdUkify
+        pkgs.libpulseaudio
+        pkgs.pop-launcher
+        pkgs.expat
+        pkgs.fontconfig
+        pkgs.freetype
+        pkgs.lld
+        pkgs.cargo
+        pkgs.libgbm
+        pkgs.libclang
+        pkgs.pipewire
+
+        pkgs.system76-power
+        pkgs.system76-firmware
+        pkgs.system76-scheduler
+        pkgs.system76-wallpapers
+        pkgs.system76-keyboard-configurator
+        pkgs.pop-gtk-theme
+        pkgs.pop-hp-wallpapers
     ];
   };
   
