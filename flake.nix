@@ -9,19 +9,15 @@
   inputs = {
     flake-schemas = {
       url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     }; 
     determinate = {
       url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
     fh = {
       url = "https://flakehub.com/f/DeterminateSystems/fh/*";
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
     flake-checker = {
       url = "https://flakehub.com/f/DeterminateSystems/flake-checker/*"
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
     nixpkgs = {
       url = "nixos-cosmic/nixpkgs";
@@ -32,15 +28,12 @@
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
     flake-utils = {
       url = "github:numtide/flake-utils";
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
     chaotic = {
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-      inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
   };
 
