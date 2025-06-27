@@ -24,6 +24,12 @@
       enable = true;
     };
   };
+
+  jovian = {
+    steam = {
+      enable = true;
+    };
+  };
   
   environment.systemPackages = [ 
     #pkgs.zed-editor_git
@@ -56,7 +62,10 @@
     pkgs.libbpf_git
     pkgs.latencyflex-vulkan
     pkgs.jovian-chaotic.steam_notif_daemon
+    pkgs.jovian-chaotic.jovian-steam-protocol-handler
+    pkgs.jovian-chaotic.jovian-stubs
     pkgs.jovian-chaotic.steam-unwrapped
+    pkgs.jovian-chaotic.steam
     pkgs.firefox_nightly
     pkgs.bpftools_full
     pkgs.appmenu-gtk3-module
