@@ -9,7 +9,7 @@ Add `NixOSFlakeRepo` to your `flake.nix`:
 {
   inputs.NixOSFlakeRepo.url = "https://flakehub.com/f/Hypercaffeinated/NixOSFlakeRepo/*";
 
-  outputs = { self, nixpkgs, NixOSFlakeRepo, ... }: {
+  outputs = { NixOSFlakeRepo, ... }: {
     nixosConfigurations.NOTEBOOK-ACER = NixOSFlakeRepo.nixosConfigurations.NOTEBOOK-ACER;
     nixosConfigurations.DESKTOP-HP = NixOSFlakeRepo.nixosConfigurations.DESKTOP-HP;
   };
