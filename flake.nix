@@ -8,11 +8,11 @@
   
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   
-  #inputs.flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*"; 
+  inputs.flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*"; 
   
-  #inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
+  inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
   
-  #inputs.fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*";
+  inputs.fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*";
   
   #inputs.nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
 
@@ -31,8 +31,8 @@
 #                                                  FLAKE OUTPUTS
 # _______________________________________________________________________________________________________________  
   
-  outputs = inputs@{ self, nixpkgs, /*flake-schemas, determinate, fh, nixos-cosmic, nur, flake-utils, chaotic,*/ ... }:
-    /*
+  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, /*nixos-cosmic, nur, flake-utils, chaotic,*/ ... }:
+    
     let
       
       # Helpers for producing system-specific outputs
@@ -55,7 +55,7 @@
           ];
         };
       });
-     */
+     
   # _______________________________________________________________________________________________________________
   #                                            NIXOS SYSTEM CONFIGURATIONS
   # _______________________________________________________________________________________________________________
@@ -72,11 +72,11 @@
           
           modules = [
           # -----------------------------------------------------------------------------------------------------
-            /*{ 
+            { 
               environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
-            }*/
+            }
           # -----------------------------------------------------------------------------------------------------
-            #determinate.nixosModules.default
+            determinate.nixosModules.default
             #nixos-cosmic.nixosModules.default
             #chaotic.nixosModules.default
           # -----------------------------------------------------------------------------------------------------
@@ -116,11 +116,11 @@
           
           modules = [
           # -----------------------------------------------------------------------------------------------------
-            /*{ 
+            { 
               environment.systemPackages = [ fh.packages.x86_64-linux.default ]; 
-            }*/
+            }
           # -----------------------------------------------------------------------------------------------------
-            #determinate.nixosModules.default
+            determinate.nixosModules.default
             #nixos-cosmic.nixosModules.default
             #chaotic.nixosModules.default
           # -----------------------------------------------------------------------------------------------------
