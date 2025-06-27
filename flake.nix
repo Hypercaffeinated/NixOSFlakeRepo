@@ -64,7 +64,6 @@
             }
             nixos-cosmic.nixosModules.default
             chaotic.nixosModules.default
-            jovian.nixosModules.default
 
             ./configuration.nix
 
@@ -101,7 +100,6 @@
             }
             nixos-cosmic.nixosModules.default
             chaotic.nixosModules.default
-            jovian.nixosModules.default
 
             ./configuration.nix
 
