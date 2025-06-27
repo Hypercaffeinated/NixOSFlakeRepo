@@ -24,12 +24,6 @@
       enable = true;
     };
   };
-
-  jovian = {
-    steam = {
-      enable = true;
-    };
-  };
   
   environment.systemPackages = [ 
     #pkgs.zed-editor_git
@@ -54,18 +48,13 @@
     #pkgs.nix-lazytrees2_git
     pkgs.mesa_git
     pkgs.mesa32_git
-    pkgs.mangohud_git
-    pkgs.mangohud32_git
+    #pkgs.mangohud_git
+    #pkgs.mangohud32_git
     pkgs.libportal_git
     pkgs.libdrm_git
     pkgs.libdrm32_git
     pkgs.libbpf_git
     pkgs.latencyflex-vulkan
-    pkgs.jovian-chaotic.steam_notif_daemon
-    pkgs.jovian-chaotic.jovian-steam-protocol-handler
-    pkgs.jovian-chaotic.jovian-stubs
-    pkgs.jovian-chaotic.steam-unwrapped
-    pkgs.jovian-chaotic.steam
     pkgs.firefox_nightly
     pkgs.bpftools_full
     pkgs.appmenu-gtk3-module
