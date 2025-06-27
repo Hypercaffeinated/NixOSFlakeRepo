@@ -6,32 +6,40 @@
 #                                                 FLAKE INPUTS
 # _______________________________________________________________________________________________________________
   
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-  
-  inputs.flake-schemas.url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*"; 
-  
-  inputs.determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
-  
-  inputs.fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*";
-  
-  #inputs.nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+  inputs = {
+    nixpkgs = {
+      url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
+      follows = "nixos-cosmic/nixpkgs";
+    };
+    flake-schemas = {
+      url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";  
+    };
+    determinate = {
+      url = "https://flakehub.com/f/DeterminateSystems/determinate/*";
+    };
+    fh = {
+      url = "https://flakehub.com/f/DeterminateSystems/fh/*";
+    };
+    flake-utils = {
+      url = "github:numtide/flake-utils";
+    };
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    };
+    nixos-cosmic = {
+      url = "github:lilyinstarlight/nixos-cosmic";
+    };
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  }; 
 
-  #inputs.nixpkgs.follows = "nixos-cosmic/nixpkgs";
-  
-  #inputs.flake-utils.url = "github:numtide/flake-utils";
-  
-  #inputs.chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-  /*
-  inputs.nur = {
-    url = "github:nix-community/NUR";
-    inputs.nixpkgs.follows = "nixpkgs";
-  };
-  */
 # _______________________________________________________________________________________________________________
 #                                                  FLAKE OUTPUTS
 # _______________________________________________________________________________________________________________  
   
-  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, /*nixos-cosmic, nur, flake-utils, chaotic,*/ ... }:
+  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, nixos-cosmic, nur, ... }:
     
     let
       
@@ -77,8 +85,8 @@
             }
           # -----------------------------------------------------------------------------------------------------
             determinate.nixosModules.default
-            #nixos-cosmic.nixosModules.default
-            #chaotic.nixosModules.default
+            chaotic.nixosModules.default
+            nixos-cosmic.nixosModules.default
           # -----------------------------------------------------------------------------------------------------
             ./configuration.nix
           # -----------------------------------------------------------------------------------------------------
@@ -88,7 +96,7 @@
             ./hosts/NOTEBOOK-ACER/services.nix
           # -----------------------------------------------------------------------------------------------------
             ./modules/boot.nix
-            #./modules/chaotic.nix
+            ./modules/chaotic.nix
             ./modules/console.nix
             ./modules/environment.nix
             ./modules/i18n.nix
@@ -121,20 +129,20 @@
             }
           # -----------------------------------------------------------------------------------------------------
             determinate.nixosModules.default
-            #nixos-cosmic.nixosModules.default
-            #chaotic.nixosModules.default
+            chaotic.nixosModules.default
+            nixos-cosmic.nixosModules.default
           # -----------------------------------------------------------------------------------------------------
             ./configuration.nix
           # -----------------------------------------------------------------------------------------------------
-            #./hosts/DESKTOP-HP/boot.nix
-            #./hosts/DESKTOP-HP/chaotic.nix
+            ./hosts/DESKTOP-HP/boot.nix
+            ./hosts/DESKTOP-HP/chaotic.nix
             ./hosts/DESKTOP-HP/environment.nix
             ./hosts/DESKTOP-HP/hardware-configuration.nix
             ./hosts/DESKTOP-HP/networking.nix
             ./hosts/DESKTOP-HP/programs.nix
           # -----------------------------------------------------------------------------------------------------
             ./modules/boot.nix
-            #./modules/chaotic.nix
+            ./modules/chaotic.nix
             ./modules/console.nix
             ./modules/environment.nix
             ./modules/i18n.nix
@@ -154,7 +162,7 @@
             ./modules/cosmic/nix.nix
             ./modules/cosmic/programs.nix
             ./modules/cosmic/services.nix
-            #./modules/cosmic/systemd.nix
+            ./modules/cosmic/systemd.nix
             ./modules/cosmic/xdg.nix
           # -----------------------------------------------------------------------------------------------------
           ];
