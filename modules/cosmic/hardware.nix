@@ -4,7 +4,7 @@
 
   hardware = {
     system76 = {
-      enableAll = true;
+      enableAll = false;
     };
   };
   
