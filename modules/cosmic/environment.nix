@@ -7,8 +7,8 @@
       COSMIC_DATA_CONTROL_ENABLED = 1;
     };
     variables = {
-      XCURSOR_SIZE=24;
-      XCURSOR_THEME="openzone-cursors";
+      #XCURSOR_SIZE=24;
+      #XCURSOR_THEME="openzone-cursors";
     };
     systemPackages = [
         
