@@ -3,9 +3,10 @@
 {
   
   services= {
-    libinput = {
-      enable = true;
+    kmscon = {
+      extraConfig = ''
+        font-size=24
+      '';
     };
-  };
 
   }
