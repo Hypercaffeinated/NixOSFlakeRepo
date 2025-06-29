@@ -21,9 +21,6 @@
       enable = true;
       hwRender = true;
       useXkbConfig = true;
-      extraConfig = ''
-        font-size=24
-      '';
       fonts = [ 
         { 
           name = "Source Code Pro"; 
