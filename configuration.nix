@@ -1,9 +1,9 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
 
 environment.systemPackages = [
-   bcachefs-tools
+   
 ];
 
 }
