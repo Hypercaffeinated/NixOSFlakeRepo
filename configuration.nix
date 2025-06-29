@@ -3,7 +3,7 @@
 {
 
 environment.systemPackages = [
-   
+   bcachefs-tools
 ];
 
 }
