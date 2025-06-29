@@ -26,12 +26,11 @@
     chaotic = {
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     };
+    jovian = {
+      follows = "chaotic/jovian";
+    };    
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
-    };
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   }; 
 
@@ -39,7 +38,7 @@
 # FLAKE OUTPUTS
 # ____________________________________________________________________
   
-  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, nixos-cosmic, nur, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, nixos-cosmic, ... }:
     
     let
       
@@ -88,6 +87,7 @@
           # ----------------------------------------------------------
             determinate.nixosModules.default
             chaotic.nixosModules.default
+            jovian.nixosModules.default
             nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
@@ -137,6 +137,7 @@
           # ----------------------------------------------------------
             determinate.nixosModules.default
             chaotic.nixosModules.default
+            jovian.nixosModules.default
             nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
