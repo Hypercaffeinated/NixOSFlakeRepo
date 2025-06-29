@@ -5,7 +5,7 @@
   boot = {
     kernelPackages = pkgs.linuxPackages_cachyos-lto; #pkgs.linuxPackages_latest;
     zfs = {
-      enable = true;
+      enabled = true;
       package = lib.mkOverride 99 pkgs.zfs_cachyos;
     };
     supportedFilesystems = [
@@ -17,7 +17,6 @@
       "cifs"
       "bcachefs"
       "ext4"
-      "zfs"
     ];
   };
   
