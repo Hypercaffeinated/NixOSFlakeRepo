@@ -17,7 +17,6 @@
       "cifs"
       "bcachefs"
       "ext4"
-      "zfs"
     ];
   };
   
