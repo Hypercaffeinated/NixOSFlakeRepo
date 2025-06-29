@@ -79,12 +79,6 @@
           
           modules = [
           # ----------------------------------------------------------
-            { 
-              environment.systemPackages = [ 
-                fh.packages.x86_64-linux.default 
-              ]; 
-            }
-          # ----------------------------------------------------------
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
@@ -128,12 +122,6 @@
           specialArgs = { inherit inputs; };
           
           modules = [
-          # ----------------------------------------------------------
-            { 
-              environment.systemPackages = [ 
-                fh.packages.x86_64-linux.default 
-              ]; 
-            }
           # ----------------------------------------------------------
             determinate.nixosModules.default
             chaotic.nixosModules.default
