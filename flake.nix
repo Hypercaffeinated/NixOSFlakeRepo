@@ -154,6 +154,7 @@
             ./hosts/DESKTOP-HP/hardware-configuration.nix
             ./hosts/DESKTOP-HP/networking.nix
             ./hosts/DESKTOP-HP/programs.nix
+            ./hosts/DESKTOP-HP/services.nix
           # ----------------------------------------------------------
             ./modules/boot.nix
             ./modules/chaotic.nix
