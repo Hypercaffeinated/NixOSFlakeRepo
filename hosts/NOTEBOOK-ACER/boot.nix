@@ -3,7 +3,7 @@
 {
 
   boot = {
-    kernelPackages = linuxPackages_cachyos-lto; #pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_cachyos-lto; #pkgs.linuxPackages_latest;
     zfs = {
       package = lib.mkOverride pkgs.zfs_cachyos;
     };
