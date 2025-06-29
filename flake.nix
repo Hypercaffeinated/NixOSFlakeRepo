@@ -28,7 +28,10 @@
     };
     jovian = {
       follows = "chaotic/jovian";
-    };    
+    };
+    bcachefs-tools = {
+      url = "github:koverstreet/bcachefs-tools";
+    };
     /*
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
