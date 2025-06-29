@@ -9,6 +9,7 @@
         device = "nodev";
         useOSProber = true;
         efiSupport = true;
+        fontSize = 24;
       };
       efi = {
         canTouchEfiVariables = true;
