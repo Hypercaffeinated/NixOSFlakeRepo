@@ -9,7 +9,7 @@
   inputs = {
     nixpkgs = {
       url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
-      follows = "nixos-cosmic/nixpkgs";
+      /* follows = "nixos-cosmic/nixpkgs"; */
     };
     flake-schemas = {
       url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";  
@@ -29,16 +29,18 @@
     jovian = {
       follows = "chaotic/jovian";
     };    
+    /*
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
     };
+    */
   }; 
 
 # ____________________________________________________________________
 # FLAKE OUTPUTS
 # ____________________________________________________________________
   
-  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, nixos-cosmic, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, /* nixos-cosmic, */ ... }:
     
     let
       
@@ -79,10 +81,16 @@
           
           modules = [
           # ----------------------------------------------------------
+            {
+              environment.systemPackages = [ 
+                fh.packages.x86_64-linux.default 
+              ];
+            }
+          # ----------------------------------------------------------
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
-            nixos-cosmic.nixosModules.default
+            /* nixos-cosmic.nixosModules.default */
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
@@ -123,10 +131,16 @@
           
           modules = [
           # ----------------------------------------------------------
+            {
+              environment.systemPackages = [ 
+                fh.packages.x86_64-linux.default 
+              ];
+            }
+          # ----------------------------------------------------------
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
-            nixos-cosmic.nixosModules.default
+            /* nixos-cosmic.nixosModules.default */
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
