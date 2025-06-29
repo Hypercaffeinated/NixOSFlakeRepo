@@ -115,8 +115,9 @@
             ./modules/users.nix
             ./modules/zramSwap.nix
           # ----------------------------------------------------------
-            ./modules/gnome/services.nix
             ./modules/gnome/programs.nix
+            ./modules/gnome/services.nix
+            ./modules/gnome/xdg.nix
           # ----------------------------------------------------------
           ];
         };
