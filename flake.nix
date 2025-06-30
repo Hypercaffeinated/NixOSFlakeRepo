@@ -9,7 +9,7 @@
   inputs = {
     nixpkgs = {
       url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*";
-      /* follows = "nixos-cosmic/nixpkgs"; */
+      follows = "nixos-cosmic/nixpkgs";
     };
     flake-schemas = {
       url = "https://flakehub.com/f/DeterminateSystems/flake-schemas/*";  
@@ -32,18 +32,16 @@
     bcachefs-tools = {
       url = "github:koverstreet/bcachefs-tools";
     };
-    /*
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
     };
-    */
   }; 
 
 # ____________________________________________________________________
 # FLAKE OUTPUTS
 # ____________________________________________________________________
   
-  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, /* nixos-cosmic, */ ... }:
+  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, nixos-cosmic, ... }:
     
     let
       
@@ -93,7 +91,7 @@
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
-            /* nixos-cosmic.nixosModules.default */
+            nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
@@ -118,9 +116,7 @@
             ./modules/users.nix
             ./modules/zramSwap.nix
           # ----------------------------------------------------------
-            ./modules/gnome/programs.nix
-            ./modules/gnome/services.nix
-            ./modules/gnome/xdg.nix
+            ./modules/cosmic/default.nix
           # ----------------------------------------------------------
           ];
         };
@@ -144,7 +140,7 @@
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
-            /* nixos-cosmic.nixosModules.default */
+            nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
