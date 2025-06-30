@@ -26,7 +26,7 @@
   };
   
   environment.systemPackages = [ 
-    #pkgs.zed-editor_git
+    pkgs.zed-editor_git
     pkgs.xdg-desktop-portal-wlr_git
     pkgs.wlroots_git
     pkgs.wayland_git
@@ -45,11 +45,11 @@
     pkgs.vulkanPackages_latest.gfxreconstruct
     pkgs.spirv-headers_git
     pkgs.nyx-generic-git-update
-    #pkgs.nix-lazytrees2_git
+    pkgs.nix-lazytrees2_git
     pkgs.mesa_git
     pkgs.mesa32_git
-    #pkgs.mangohud_git
-    #pkgs.mangohud32_git
+    pkgs.mangohud_git
+    pkgs.mangohud32_git
     pkgs.libportal_git
     pkgs.libdrm_git
     pkgs.libdrm32_git
