@@ -45,7 +45,7 @@
     pkgs.vulkanPackages_latest.gfxreconstruct
     pkgs.spirv-headers_git
     pkgs.nyx-generic-git-update
-    pkgs.nix-lazytrees2_git
+    #pkgs.nix-lazytrees2_git
     pkgs.mesa_git
     pkgs.mesa32_git
     pkgs.mangohud_git
