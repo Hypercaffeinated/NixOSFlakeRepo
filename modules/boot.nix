@@ -15,17 +15,17 @@
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot";
       };
-      supportedFilesystems = [
-        "btrfs"
-        "vfat"
-        "f2fs"
-        "xfs"
-        "ntfs"
-        "cifs"
-        "bcachefs"
-        "ext4"
-      ];
     };
+    supportedFilesystems = [
+      "btrfs"
+      "vfat"
+      "f2fs"
+      "xfs"
+      "ntfs"
+      "cifs"
+      "bcachefs"
+      "ext4"
+    ];
   };
   
 }
