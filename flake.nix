@@ -100,21 +100,7 @@
             ./hosts/NOTEBOOK-ACER/networking.nix
             ./hosts/NOTEBOOK-ACER/services.nix
           # ----------------------------------------------------------
-            ./modules/boot.nix
-            ./modules/chaotic.nix
-            ./modules/console.nix
-            ./modules/environment.nix
-            ./modules/i18n.nix
-            ./modules/networking.nix
-            ./modules/nix.nix
-            ./modules/nixpkgs.nix
-            ./modules/programs.nix
-            ./modules/services.nix
-            ./modules/system.nix
-            ./modules/systemd.nix
-            ./modules/time.nix
-            ./modules/users.nix
-            ./modules/zramSwap.nix
+            ./modules/default.nix
           # ----------------------------------------------------------
             ./modules/cosmic/default.nix
           # ----------------------------------------------------------
@@ -152,21 +138,7 @@
             ./hosts/DESKTOP-HP/programs.nix
             ./hosts/DESKTOP-HP/services.nix
           # ----------------------------------------------------------
-            ./modules/boot.nix
-            ./modules/chaotic.nix
-            ./modules/console.nix
-            ./modules/environment.nix
-            ./modules/i18n.nix
-            ./modules/networking.nix
-            ./modules/nix.nix
-            ./modules/nixpkgs.nix
-            ./modules/programs.nix
-            ./modules/services.nix
-            ./modules/system.nix
-            ./modules/systemd.nix
-            ./modules/time.nix
-            ./modules/users.nix
-            ./modules/zramSwap.nix
+            ./modules/default.nix
           # ----------------------------------------------------------
             
           # ----------------------------------------------------------
