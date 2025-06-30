@@ -2,7 +2,7 @@
 
 {
 
-  import = [
+  imports = [
     ./environment.nix
     ./nix.nix
     ./programs.nix
