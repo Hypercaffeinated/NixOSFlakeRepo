@@ -5,7 +5,7 @@
   environment = {
     systemPackages = [
       pkgs.discord-canary
-      pkgs.mission-control
+      pkgs.mission-center
     ];
   };
   
