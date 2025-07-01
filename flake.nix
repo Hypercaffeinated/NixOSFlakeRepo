@@ -28,16 +28,20 @@
     jovian = {
       follows = "chaotic/jovian";
     };
+    nixos-cosmic = {
+      url = "github:lilyinstarlight/nixos-cosmic";
+    };
     bcachefs-tools = {
       url = "github:koverstreet/bcachefs-tools";
     };
+    
   }; 
 
 # ____________________________________________________________________
 # FLAKE OUTPUTS
 # ____________________________________________________________________
   
-  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, ... }:
+  outputs = inputs@{ self, nixpkgs, flake-schemas, determinate, fh, flake-utils, chaotic, jovian, nixos-cosmic, ... }:
     
     let
       
@@ -87,6 +91,7 @@
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
+            nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
@@ -121,6 +126,7 @@
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
+            nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
