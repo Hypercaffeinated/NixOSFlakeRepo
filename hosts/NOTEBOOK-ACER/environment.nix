@@ -4,7 +4,7 @@
 
   environment = {
     systemPackages = [
-      
+      pkgs.mission-control
     ];
   };
   
