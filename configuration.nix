@@ -2,8 +2,10 @@
 
 {
 
-environment.systemPackages = [
-   pkgs.bcachefs-tools
-];
+environment = {
+  systemPackages = [
+    pkgs.bcachefs-tools
+  ];
+};
 
 }
