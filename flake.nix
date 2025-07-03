@@ -33,8 +33,7 @@
     };
     bcachefs-tools = {
       url = "github:koverstreet/bcachefs-tools";
-    };
-    
+    }; 
   }; 
 
 # ____________________________________________________________________
@@ -91,7 +90,6 @@
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
-            nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
@@ -126,7 +124,6 @@
             determinate.nixosModules.default
             chaotic.nixosModules.default
             jovian.nixosModules.default
-            nixos-cosmic.nixosModules.default
           # ----------------------------------------------------------
             ./configuration.nix
           # ----------------------------------------------------------
